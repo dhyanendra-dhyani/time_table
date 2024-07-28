@@ -1,62 +1,76 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
     margin: 0;
     padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
   }
   
   .container {
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
-    background: #fff;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
     text-align: center;
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    background-color: #ffffff;
+    border-radius: 10px;
   }
   
   h1 {
-    margin-bottom: 20px;
+    margin: 20px 0;
+    font-size: 1.5em;
+    color: #333;
   }
   
-  ul {
+  .schedule {
     list-style-type: none;
     padding: 0;
   }
   
-  li {
-    background: #e4e4e4;
-    margin: 5px 0;
-    padding: 10px;
-    text-align: left;
-    border-radius: 5px;
+  .schedule-item {
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
   }
   
-  button {
+  .course-name {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .time {
+    font-size: 0.9em;
+    color: #666;
+  }
+  
+  .venue {
+    display: inline-block;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 15px;
+    background-color: #e0e0e0;
+    font-size: 0.8em;
+    color: #555;
+  }
+  
+  #next-day-button {
     margin-top: 20px;
     padding: 10px 20px;
-    font-size: 1rem;
+    font-size: 1em;
+    color: #fff;
     background-color: #007bff;
-    color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
   }
   
-  button:hover {
+  #next-day-button:hover {
     background-color: #0056b3;
-  }
-  
-  @media (max-width: 600px) {
-    .container {
-      padding: 10px;
-    }
-  
-    ul, li, button {
-      font-size: 0.9rem;
-    }
-  
-    button {
-      width: 100%;
-    }
   }
   
