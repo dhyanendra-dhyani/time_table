@@ -22,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { time: '10:20 - 11:10 AM', course: 'SOFT COMPUTING', venue: 'Block-D2-406' },
         { time: '11:10 - 12:00 PM', course: 'Computer Networks', venue: 'Block-D2-508-A' },
         { time: '12:00 - 12:50 PM', course: 'Computer Networks', venue: 'Block-D2-508-A' },
+        { time: '01:50 - 02:40 PM', course: 'Artificial Intelligence', venue: 'Block-D2-405' },  // New subject added
         { time: '02:40 - 03:30 PM', course: 'Aptitude-III', venue: 'Block-D2-405' },
         { time: '03:30 - 04:20 PM', course: 'Aptitude-III', venue: 'Block-D2-405' },
       ],
@@ -68,6 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
           scheduleContainer.appendChild(scheduleItem);
         });
       }
+
     }
   
     displaySchedule(currentIndex);
@@ -76,5 +78,4 @@ document.addEventListener('DOMContentLoaded', function() {
       currentIndex = (currentIndex + 1) % 7; // Loop back to Sunday after Saturday
       displaySchedule(currentIndex);
     });
-  });
-  
+});
